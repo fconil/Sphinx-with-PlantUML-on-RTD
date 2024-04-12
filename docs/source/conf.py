@@ -17,7 +17,9 @@ release = '0.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+        'sphinx.ext.intersphinx',
         'sphinxcontrib.plantuml',
+        'hoverxref.extension'
         ]
 
 templates_path = ['_templates']
@@ -31,7 +33,23 @@ language = 'en'
 html_theme = 'furo'
 html_static_path = ['_static']
 
+# -- Options for intersphinx  ------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html
+intersphinx_mapping = {
+        'python': ('https://docs.python.org/3', None)
+        'readthedocs': ('https://docs.readthedocs.io/en/stable/', None),
+        'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
+        }
+
 # -- Options for PlantUML ----------------------------------------------------
 # Based on https://github.com/readthedocs/readthedocs.org/issues/9958
 local_plantuml_path = os.path.join(os.path.dirname(__file__), "utils", "plantuml-1.2022.14.jar")
 plantuml = f"java -Djava.awt.headless=true -jar {local_plantuml_path}"
+
+# -- Options for hoverxref ---------------------------------------------------
+# https://github.com/readthedocs/sphinx-hoverxref/blob/main/docs/conf.py
+hoverxref_intersphinx = [
+    'readthedocs',
+    'sphinx',
+    'python',
+]

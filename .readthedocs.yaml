@@ -4,6 +4,7 @@ build:
   os: ubuntu-22.04
   apt_packages:
     - default-jdk
+    - graphviz
   tools:
     python: "3.10"
     # You can also specify other tool versions:

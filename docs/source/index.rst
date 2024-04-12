@@ -12,6 +12,8 @@ Welcome to Explore Sphinx with PlantUML and my extensions's documentation!
 
    diagrams
 
+   references
+
 
 
 Indices and tables
