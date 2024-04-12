@@ -36,7 +36,7 @@ html_static_path = ['_static']
 # -- Options for intersphinx  ------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html
 intersphinx_mapping = {
-        'python': ('https://docs.python.org/3', None)
+        'python': ('https://docs.python.org/3', None),
         'readthedocs': ('https://docs.readthedocs.io/en/stable/', None),
         'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
         }
