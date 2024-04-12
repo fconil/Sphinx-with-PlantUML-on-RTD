@@ -2,7 +2,9 @@
 Sequence diagram
 ================
 
-The goal is to display the following diagram::
+The goal is to display the following diagram.
+
+.. uml::
 
     @startuml
     autonumber 10 10 "<b>[000]"

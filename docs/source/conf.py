@@ -14,7 +14,9 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = [
+        'sphinxcontrib.plantuml',
+        ]
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -26,3 +28,8 @@ language = 'en'
 
 html_theme = 'furo'
 html_static_path = ['_static']
+
+# -- Options for PlantUML ----------------------------------------------------
+# Based on https://github.com/readthedocs/readthedocs.org/issues/9958
+local_plantuml_path = os.path.join(os.path.dirname(__file__), "utils", "plantuml-1.2022.14.jar")
+plantuml = f"java -Djava.awt.headless=true -jar {local_plantuml_path}"
