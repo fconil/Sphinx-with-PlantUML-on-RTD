@@ -53,4 +53,5 @@ hoverxref_intersphinx = [
     'readthedocs',
     'sphinx',
     'python',
+    'ntt'
 ]
