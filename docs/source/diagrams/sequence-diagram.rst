@@ -6,7 +6,6 @@ The goal is to display the following diagram.
 
 .. uml::
 
-    @startuml
     autonumber 10 10 "<b>[000]"
     Bob -> Alice : Authentication Request
     Bob <- Alice : Authentication Response
@@ -24,5 +23,4 @@ The goal is to display the following diagram.
     autonumber resume 1 "<font color=blue><b>Message 0  "
     Bob -> Alice : Yet another authentication Request
     Bob <- Alice : Yet another authentication Response
-    @enduml
 
