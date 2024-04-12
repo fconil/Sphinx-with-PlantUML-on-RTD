@@ -1,0 +1,7 @@
+furo
+sphinx-design
+sphinx-gallery
+sphinxcontrib-mermaid
+sphinxcontrib-plantuml
+sphinx-hoverxref
+sphinxext-opengraph
