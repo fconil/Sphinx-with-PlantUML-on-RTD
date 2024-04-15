@@ -6,7 +6,10 @@ The goal is to display the following diagram.
 
 .. uml::
 
+    !theme aws-orange
+
     autonumber 10 10 "<b>[000]"
+
     Bob -> Alice : Authentication Request
     Bob <- Alice : Authentication Response
 
