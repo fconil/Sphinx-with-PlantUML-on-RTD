@@ -1,6 +1,6 @@
-================
-Sequence diagram
-================
+=========================
+PlantUML Sequence diagram
+=========================
 
 The goal is to display the following diagram.
 

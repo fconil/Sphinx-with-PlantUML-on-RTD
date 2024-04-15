@@ -19,6 +19,7 @@ release = '0.1'
 extensions = [
         'sphinx.ext.intersphinx',
         'sphinxcontrib.plantuml',
+        'sphinxcontrib.mermaid',
         'hoverxref.extension'
         ]
 
@@ -46,6 +47,12 @@ intersphinx_mapping = {
 # Based on https://github.com/readthedocs/readthedocs.org/issues/9958
 local_plantuml_path = os.path.join(os.path.dirname(__file__), "utils", "plantuml-lgpl-1.2024.4.jar")
 plantuml = f"java -Djava.awt.headless=true -jar {local_plantuml_path}"
+
+# -- Options for sphinxcontrib.mermaid extension  ------------------------------
+mermaid_init_js = """mermaid.initialize({
+    startOnLoad: true, 
+    sequence: {showSequenceNumbers: true}
+});"""
 
 # -- Options for hoverxref ---------------------------------------------------
 # https://github.com/readthedocs/sphinx-hoverxref/blob/main/docs/conf.py
